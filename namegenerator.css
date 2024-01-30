@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+body {
+  background-image: url(images/papyrus_rolle_1.jpg);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: auto;
+  background-color: rgb(31, 30, 30);
+  font-family: 'IM Fell English', 'Trajan Pro', 'Cinzel', 'Forum', serif;
+    color: #0e0e0e;
+  margin: 0;
+  padding: 0;
+}
+
+.papyrus-font {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 134px;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.button-wrapper_2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 35.3%;
+}
+
+.generated-name {
+  font-size: 30px;
+  line-height: 3em;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline 3px rgb(31, 30, 30);
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+.generator-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 114px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+  font-family: 'Trajan Pro', 'Cinzel', 'Forum', serif;
+  color: #000000;
+  font-size: 23px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fallInAnimation 2s forwards, randomizeAnimation 2s forwards;
+}
+
+.generator-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/Pfeiler1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.generator-button:hover {
+  opacity: 0.7;
+}
+
+.line {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border: none;
+  border-top: 2px solid #303030;
+  margin: 0 auto;
+  width: 35%;
+  opacity: 60%;
+  animation: fadeInAnimation 2s forwards;
+}
+
+.line2 {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border: none;
+  border-top: 2px solid #303030;
+  margin: 0 auto;
+  width: 35%;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fallInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes randomizeAnimation {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes randomizeDelay {
+  100% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

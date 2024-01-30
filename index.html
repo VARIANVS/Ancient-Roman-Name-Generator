@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ancient Roman Name Generator</title>
+  <link rel="stylesheet" type="text/css" href="namegenerator.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="papyrus-font">Ancient Roman Name Generator</h1>
+
+<!--   
+    <div class="spoiler">
+      <button class="spoiler-button" data-show-label="TRIA NOMINA" data-hide-label="TRIA NOMINA verbergen">TRIA NOMINA</button>
+      <div class="spoiler-content">
+--> 
+
+        <div class="button-wrapper">
+          <!-- Button for the category "PRAENOMEN" -->
+          <div class="button-container">
+            <button class="generator-button" id="praenomenButton">PRAENOMEN</button>
+            <div id="praenomenButton-generatedName" class="generated-name"></div>
+          </div>
+
+          <!-- Button for the category "NOMENGENTILICUM" -->
+          <div class="button-container">
+            <button class="generator-button" id="nomengentileButton">NOMEN</button>
+            <div id="nomengentileButton-generatedName" class="generated-name"></div>
+          </div>
+
+          <!-- Button for the category "COGNOMEN" -->
+          <div class="button-container">
+            <button class="generator-button" id="cognomenButton">COGNOMEN</button>
+            <div id="cognomenButton-generatedName" class="generated-name"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+    <div class="spoiler">
+      <button class="spoiler-button" data-show-label="Andere" data-hide-label="Andere verbergen">Andere</button>
+      <div class="spoiler-content">
+-->        
+
+        <div class="button-wrapper_2">
+          <!-- Button for the category "FEMININENAMES" -->
+          <div class="button-container">
+            <button class="generator-button" id="femininenamesButton">FEMININVM</button>
+            <div id="femininenamesButton-generatedName" class="generated-name"></div>
+          </div>
+
+          <!-- Button for the category "NEUTRALNAMES" -->
+          <div class="button-container">
+            <button class="generator-button" id="neutralnamesButton">NEVTRVM</button>
+            <div id="neutralnamesButton-generatedName" class="generated-name"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr class="line">
+<hr class="line2">
+
+  <!-- Script zur Handhabung der Klickereignisse -->
+  <script src="namegenerator.js"></script>
+  <script src="praenomina.js"></script>
+  <script src="cognomina.js"></script>
+  <script src="nominagentile.js"></script>
+  <script src="femininenames.js"></script>
+  <script src="neutralnames.js"></script>
+</body>
+</html>
