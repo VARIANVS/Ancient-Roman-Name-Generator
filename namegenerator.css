@@ -28,6 +28,8 @@
 
 
 @media (min-width: 250px) {
+
+  /* Background image for body */
   body {
     background-image: url(images/papyrus_rolle_1.jpg);
     background-repeat: no-repeat;
@@ -40,6 +42,7 @@
     padding: 0;
   }
 
+  /* Headline */
   .papyrus-font {
     font-size: 34px;
     text-align: center;
@@ -51,6 +54,7 @@
     animation: fade_animation 2s;
   }
 
+  /* Container for buttons */
   .container {
     max-width: 49rem;
     margin: 0 auto;
@@ -61,17 +65,20 @@
     text-align: center;
   }
 
+  /* Upper buttons placement */
   .button-wrapper_1 {
     display: flex;
     margin-top: 6rem;
     height: 250px;
   }
 
+  /* Lower buttons placement */
   .button-wrapper_2 {
     display: flex;
     justify-content: center;
   }
 
+  /* Generated names */
   .generated-name {
     display: flex;
     justify-content: center;
@@ -82,6 +89,7 @@
     animation: fade_animation 1s forwards;
   }
 
+  /* Buttons styling */
   .generator-button {
     display: flex;
     align-items: center;
@@ -100,12 +108,13 @@
     animation: fade_animation 2s forwards, fall_animation 2s forwards;
   }
 
+  /* Buttons styling */
   .generator-button::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(images/Pfeiler1.png);
+    background-image: url(images/pillar_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -113,16 +122,18 @@
     z-index: -1;
   }
 
+  /* Buttons animation */
   .generator-button:hover {
     opacity: 0.7;
   }
 }
 
 @media (min-width: 2559px) {
+
+  /* Background image change for 4k */
   body {
     background-image: url(images/papyrus_1.jpg);
     background-repeat: repeat;
     background-size: auto;
   }
-
 }
