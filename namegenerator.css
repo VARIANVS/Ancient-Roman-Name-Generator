@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 
 @keyframes fade_animation {
   0% {
@@ -26,9 +25,7 @@
   }
 }
 
-
 @media (min-width: 250px) {
-
   /* Background image for body */
   body {
     background-image: url(images/papyrus_rolle_1.jpg);
@@ -36,7 +33,7 @@
     background-position: top center;
     background-size: auto;
     background-color: rgb(31, 30, 30);
-    font-family: 'IM Fell English', 'Trajan Pro', 'Cinzel', 'Forum', serif;
+    font-family: "IM Fell English", "Trajan Pro", "Cinzel", "Forum", serif;
     color: #0e0e0e;
     margin: 0;
     padding: 0;
@@ -100,7 +97,7 @@
     cursor: pointer;
     transition: opacity 0.3s ease;
     background-color: transparent;
-    font-family: 'Trajan Pro', 'Cinzel', 'Forum', serif;
+    font-family: "Trajan Pro", "Cinzel", "Forum", serif;
     color: #000000;
     font-size: 23px;
     font-weight: bold;
@@ -125,15 +122,5 @@
   /* Buttons animation */
   .generator-button:hover {
     opacity: 0.7;
-  }
-}
-
-@media (min-width: 2559px) {
-
-  /* Background image change for 4k */
-  body {
-    background-image: url(images/papyrus_1.jpg);
-    background-repeat: repeat;
-    background-size: auto;
   }
 }
